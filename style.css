@@ -1,0 +1,18 @@
+fieldset {
+  margin-bottom: 1rem;
+}
+legend {
+  margin-bottom: 0.5rem;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.radio {
+  background-color: #e2e2e2;
+  padding: 1rem
+}
