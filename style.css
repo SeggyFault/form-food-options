@@ -1,15 +1,95 @@
+:root {
+  --primary-color: #fbfbfb;
+  --secondary-color: #979197;
+  --additional-color: #f69833;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 fieldset {
   margin-bottom: 1rem;
+  border: none;
 }
+
 legend {
   margin-bottom: 0.5rem;
 }
+
 ul {
   list-style: none;
 }
 
 li {
   margin-bottom: 1rem;
+}
+
+/* Custom inputs */
+input[type="radio"], input[type="checkbox"] {
+  display: none;
+}
+
+/* label::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  margin-right: 1rem;
+} */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.legend {
+  font-weight: bold;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(./img/header.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+.header__text {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+} 
+
+/* PERSONAL INFO */
+.personal-info__list {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.personal-info__list-item {
+  margin-right: 1rem;
+}
+
+.personal-info__input {
+  height: 1.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .radio {

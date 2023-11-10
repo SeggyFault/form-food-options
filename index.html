@@ -9,137 +9,154 @@
   </head>
     
   <body>
-    
-    <form action="#" method="POST">
-      <fieldset>
-        <legend>Personal info</legend>
+
+    <div class="container">
+
+      <header class="header">
+        <h1 class="header__title">Food Options</h1>
+        <p class="header__text">
+          Just a reminder that next Saturday in class we will be having some food after class with the students 
+          attending Adevinta for their Final Projects! 
+          We want to know your food preferences to be prepared.
+        </p>
+      </header>
+  
+      <main class="main">
         
-        <ul>
+        <form action="#" method="POST">
           
-          <li>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required/>
-          </li>
-          
-          <li>
-            <label for="country">Country</label>
-            <input type="text" id="country" />
-          </li>
-          
-          <li>
-             <label for="age">Age:</label>
-            <input type="number" id="age" />
-          </li>
-          
-        </ul>
-      </fieldset>
-    
-      <fieldset>
-        <legend>Dietary Restrictions</legend>
-        
-        <ul>
-          
-          <li class="radio">
-            <legend>Do you have any food allergies?</legend>
-            <label for="yes">Yes</label>
-            <input type="radio" id="yes" name="allergy" value="yes" checked/>
-            <label for="no">Do you have any food allergies?</label>
-            <input type="radio" id="no" name="allergy" value="no" checked/>
-          </li>
-          
-          <li>
-            <legend>Can you specify your type of allergy?</legend>
-            <label for="peanuts">Peanuts</label>
-            <input type="checkbox" id="peanuts" name="allergies" value="peanuts" />
-            <label for="fish">Fish</label>
-            <input type="checkbox" id="fish" name="allergies" value="fish" />
-            <label for="milk">Milk</label>
-            <input type="checkbox" id="milk" name="allergies" value="milk" />
-          </li>
-          
-          <li>
-            <label for="diet-type">Diet Type:</label>
-            <select id="diet-type">
-              <option>Vegan</option>
-              <option>Vegetarian</option>
-              <option>Pescatarian</option>
-              <option>Halal</option>
-              <option>Kosher</option>
-            </select>
-          </li>
-          
-          <li>
-            <label for="additional-info">Additional Info:</label>
-              <textarea></textarea>
-          </li>
-          
-        </ul>
-        
-      </fieldset>
-    
-      <fieldset>
-        <legend>Preferences:</legend>
-        
-        <ul>
-          
-          <li>
-            <label for="spicyness">Spicyness Level:</label>
-            <input type="range" id="spicyness" min="1" max="3" step="1" value="1"/>
-          </li>
-          
-          <li>
-            <label for="saltyness">Saltyness Level:</label>
-            <input type="range" id="saltyness" min="1" max="3" step="1" value="1"/>
-          </li>
-          
-          <li class="radio">
-            <legend>Portion Size:</legend>
-            <label for="s">S</label>
-            <input type="radio" id="s" name="portion-size" value="s" checked />
+          <!-- PERSONAL INFO -->
+          <fieldset class="personal-info">
+
+            <legend class="legend">Personal info</legend>
             
-            <label for="m">M</label>
-            <input type="radio" id="m" name="portion-size" value="m" />
-           
-            <label for="s">L</label>
-            <input type="radio" id="l" name="portion-size" value="l" />
-          </li>
-          
-          <li>
-            <label for="drink-type">Drink Type:</label>
-            <select id="drink-type" name="drink-type">
-              <option value="water">Water</option>
-              <option value="coca-cola" selected>Coca-cola</option>
-              <option value="juice">Juice</option>
-            </select>
-          </li>
-          
-          <li>
-             <label for="dessert-type">Dessert Type:</label>
-            <select id="dessert-type" name="dessert-type">
-              <option selected value="cheesecake">Cheesecake</option>
-              <option value="ice-cream">Ice-cream</option>
-              <option value="muffin">Muffin</option>
-            </select>
-          </li>
-          
-          <li class="radio">
-            
-            <legend>
-              How do you prefer your food?
-            </legend>
-            <label for="warm">Warm</label>
-            <input type="radio" id="warm" name="food-temperature" value="warm" checked />
-            
-            <label for="cold">Cold</label>
-            <input type="radio" id="cold" name="food-temperature" value="cold" checked />
-            
-          </li>
-          
-       </ul>
+            <ul class="personal-info__list">
+              
+              <li class="personal-info__list-item">
+                <label for="name" class="personal-info__label" >Name:</label>
+                <input type="text" id="name" class="personal-info__input" placeholder="ex. Maria Shevchenko" required />
+              </li>
+              
+              <li class="personal-info__list-item">
+                <label for="country" class="personal-info__label">Country:</label>
+                <input type="text" id="country" class="personal-info__input" placeholder="ex. Ukraine" required />
+              </li>
+              
+              <li class="personal-info__list-item">
+                <label for="age" class="personal-info__label">Age:</label>
+                <input type="number" id="age" class="personal-info__input" min="18" max="100" step="1" required />
+              </li>
+              
+            </ul>
+
+          </fieldset>
         
-      </fieldset>
-      
-    </form>
+          <fieldset>
+            <legend class="legend">Dietary Restrictions</legend>
+            
+            <ul>
+              
+              <li class="radio">
+                <legend>Do you have any food allergies?</legend>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="allergy" value="yes" checked/>
+                <label for="no"></label>
+                <input type="radio" id="no" name="allergy" value="no" />
+              </li>
+              
+              <li>
+                <legend>Can you specify your type of allergy?</legend>
+                <label for="peanuts">Peanuts</label>
+                <input type="checkbox" id="peanuts" name="allergies" value="peanuts" />
+                <label for="fish">Fish</label>
+                <input type="checkbox" id="fish" name="allergies" value="fish" />
+                <label for="milk">Milk</label>
+                <input type="checkbox" id="milk" name="allergies" value="milk" />
+              </li>
+              
+              <li>
+                <label for="diet-type">Diet Type:</label>
+                <select id="diet-type">
+                  <option>Vegan</option>
+                  <option>Vegetarian</option>
+                  <option>Pescatarian</option>
+                  <option>Halal</option>
+                  <option>Kosher</option>
+                </select>
+              </li>
+              
+              <li>
+                <label for="additional-info">Additional Info:</label>
+                  <textarea></textarea>
+              </li>
+              
+            </ul>
+            
+          </fieldset>
+        
+          <fieldset>
+            <legend class="legend">Preferences:</legend>
+            
+            <ul>
+              
+              <li>
+                <label for="spicyness">Spicyness Level:</label>
+                <input type="range" id="spicyness" min="1" max="3" step="1" value="1"/>
+              </li>
+              
+              <li>
+                <label for="saltyness">Saltyness Level:</label>
+                <input type="range" id="saltyness" min="1" max="3" step="1" value="1"/>
+              </li>
+              
+              <li class="radio">
+                <legend>Portion Size:</legend>
+                <label for="s">S</label>
+                <input type="radio" id="s" name="portion-size" value="s" checked />
+                
+                <label for="m">M</label>
+                <input type="radio" id="m" name="portion-size" value="m" />
+               
+                <label for="s">L</label>
+                <input type="radio" id="l" name="portion-size" value="l" />
+              </li>
+              
+              <li>
+                <label for="drink-type">Drink Type:</label>
+                <select id="drink-type" name="drink-type">
+                  <option value="water">Water</option>
+                  <option value="coca-cola" selected>Coca-cola</option>
+                  <option value="juice">Juice</option>
+                </select>
+              </li>
+              
+              <li>
+                 <label for="dessert-type">Dessert Type:</label>
+                <select id="dessert-type" name="dessert-type">
+                  <option selected value="cheesecake">Cheesecake</option>
+                  <option value="ice-cream">Ice-cream</option>
+                  <option value="muffin">Muffin</option>
+                </select>
+              </li>
+              
+              <li class="radio">
+                
+                <legend class="legend">How do you prefer your food?</legend>
+                <label for="warm">Warm</label>
+                <input type="radio" id="warm" name="food-temperature" value="warm" checked />
+                
+                <label for="cold">Cold</label>
+                <input type="radio" id="cold" name="food-temperature" value="cold" checked />
+                
+              </li>
+              
+           </ul>
+            
+          </fieldset>
+        </form>
+      </main>
+
+    </div>
     
   </body>
   
